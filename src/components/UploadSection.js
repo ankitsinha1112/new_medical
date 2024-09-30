@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button, LinearProgress, Card, CardMedia, Modal } from '@mui/material';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const UploadSection = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -46,7 +47,15 @@ const UploadSection = () => {
       <Typography variant="body1" paragraph>
         Easily upload your medical records, prescriptions, and more.
       </Typography>
-      <Button variant="contained" component="label">
+      {/* <Button variant="contained" component="label"> */}
+      <Button
+        component="label"
+        size="large"
+        role={undefined}
+        variant="contained"
+        tabIndex={-1}
+        startIcon={<CloudUploadIcon />}
+      >
         Upload Documents
         <input type="file" hidden onChange={handleFileUpload} />
       </Button>

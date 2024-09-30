@@ -1,22 +1,24 @@
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
+import UploadSection from './UploadSection';
 
 const About = () => {
   return (
     <Box sx={{ padding: '40px 0', backgroundColor: '#f9f9f9', textAlign: "justify" }}>
       <Container>
+        <Typography variant="body1" paragraph>
+          Documenting medical history is essential for effective health management as it provides a comprehensive overview of an individual's health journey. Accurate records ensure that healthcare providers have critical information about past conditions, treatments, and allergies, enabling informed decisions and reducing the risk of errors. This continuity of care is particularly vital in emergencies and when coordinating between multiple specialists. Additionally, a well-maintained medical history empowers patients to engage in their health care actively, promoting better communication and more personalized treatment plans. Ultimately, it plays a crucial role in improving health outcomes and enhancing overall well-being.
+        </Typography>
+        <div><UploadSection /></div>
         {/* Introductory Section */}
         <Typography variant="h4" gutterBottom>
           The Importance of Documenting Your Medical History
         </Typography>
-        <Typography variant="body1" paragraph>
-          Documenting medical history is essential for effective health management as it provides a comprehensive overview of an individual's health journey. Accurate records ensure that healthcare providers have critical information about past conditions, treatments, and allergies, enabling informed decisions and reducing the risk of errors. This continuity of care is particularly vital in emergencies and when coordinating between multiple specialists. Additionally, a well-maintained medical history empowers patients to engage in their health care actively, promoting better communication and more personalized treatment plans. Ultimately, it plays a crucial role in improving health outcomes and enhancing overall well-being.
-        </Typography>
-
         {/* Main Content */}
         <Typography variant="body1" paragraph>
           Documenting your medical history is a vital aspect of personal health management. Here are several key reasons why maintaining an accurate and comprehensive medical history is essential:
         </Typography>
+
 
         <Typography variant="h6" gutterBottom>
           1. Improved Healthcare

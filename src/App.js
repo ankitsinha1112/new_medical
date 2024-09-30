@@ -24,7 +24,7 @@ const App = () => {
       <Header 
         heroRef={heroRef} 
         aboutRef={aboutRef} 
-        uploadRef={uploadRef} 
+        // uploadRef={uploadRef} 
         servicesRef={servicesRef} 
         testimonialsRef={testimonialsRef} 
         resourcesRef={resourcesRef} 
@@ -32,7 +32,7 @@ const App = () => {
       />
       <div ref={heroRef}><Hero /></div>
       <div ref={aboutRef}><About /></div>
-      <div ref={uploadRef}><UploadSection /></div>
+      {/* <div ref={uploadRef}><UploadSection /></div> */}
       <div ref={servicesRef}><Services /></div>
       <div ref={testimonialsRef}><Testimonials /></div>
       <div ref={resourcesRef}><Resources /></div>

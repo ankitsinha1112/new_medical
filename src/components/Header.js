@@ -24,8 +24,8 @@ const Header = ({ heroRef, aboutRef, uploadRef, servicesRef, testimonialsRef, re
     <List>
       {[
         { text: 'Home', ref: heroRef },
+        // { text: 'Upload', ref: uploadRef },
         { text: 'About', ref: aboutRef },
-        { text: 'Upload', ref: uploadRef },
         { text: 'Services', ref: servicesRef },
         { text: 'Testimonials', ref: testimonialsRef },
         { text: 'Resources', ref: resourcesRef },
@@ -59,8 +59,8 @@ const Header = ({ heroRef, aboutRef, uploadRef, servicesRef, testimonialsRef, re
             <>
               {[
                 { text: 'Home', ref: heroRef },
+                // { text: 'Upload', ref: uploadRef },
                 { text: 'About', ref: aboutRef },
-                { text: 'Upload', ref: uploadRef },
                 { text: 'Services', ref: servicesRef },
                 { text: 'Testimonials', ref: testimonialsRef },
                 { text: 'Resources', ref: resourcesRef },
@@ -72,7 +72,7 @@ const Header = ({ heroRef, aboutRef, uploadRef, servicesRef, testimonialsRef, re
               ))}
               <div style={{ position: 'relative', marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
                 <SearchIcon />
-                <InputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} />
+                <InputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} sx={{color:"white"}}/>
               </div>
             </>
           )}
